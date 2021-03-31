@@ -11,7 +11,7 @@
 
 ### Association
 
-- has_many :homes
+- has_many :items
 - has_many :comments
 
 ## items テーブル
