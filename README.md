@@ -20,7 +20,6 @@
 | ---------- | --------- | ----------- |
 | title      | string    | null: false |
 | concept    | text      | null: false |
-| text       | text      | null: false |
 | user       | reference |             |
 
 ### Association
