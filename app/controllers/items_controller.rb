@@ -6,6 +6,10 @@ class ItemsController < ApplicationController
     @items = Item.all
   end
 
+  def search
+    @items = Item.search(params[:keyword])
+  end
+
   def new
     @item = Item.new
   end
