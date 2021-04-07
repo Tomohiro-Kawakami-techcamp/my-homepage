@@ -1,5 +1,6 @@
 <%= form_with(model: item, local: true) do |form| %>
-      <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.text_area :text, placeholder: "text", rows: "10" %>
-      <%= form.submit "SEND" %>
+      <%= form.file_field :image, id:"item-image" %>
+      <%= form.text_field :title, class:"tasks-text1", id:"item-name", placeholder:"タイトルを記入して下さい" %>
+      <%= form.text_area :concept, placeholder: "text", rows: "10", placeholder:"内容を10行以内にまとめて記入して下さい" %>
+      <%= form.submit "投稿" %>
 <% end %>
