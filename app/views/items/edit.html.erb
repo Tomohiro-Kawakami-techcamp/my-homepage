@@ -1,20 +1,8 @@
 <%= link_to "戻る", root_path %>
 
-<%= form_with model: @item, local: true do |f| %>
-<div>
-  <%= f.label :title, "タイトル" %><br />
-  <%= f.text_field :title, class:"tasks-text1", id:"item-name", placeholder:"タイトルを記入して下さい" %>
+<div class="contents row">
+  <div class="container">
+    <h3>変更する</h3>
+    <%= render partial: "form", locals: { item: @item } %>
+  </div>
 </div>
-<br>
-<div>
-<%= f.file_field :image, id:"item-image" %>
-</div>
-<br>
-<div>
-  <%= f.label :concept, "内容" %><br />
-  <%= f.text_area :concept, class:"tasks-text1", id:"item-name", placeholder:"内容を記入して下さい" ,rows:"7" ,maxlength:"1000" %>
-</div>
-<div class="sell-btn-contents">
-  <%= f.submit "変更する" ,class:"sell-btn" %>
-</div>
-<% end %>
