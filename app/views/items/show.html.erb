@@ -1,7 +1,13 @@
 <%= link_to "戻る", root_path %>
 
 <%= form_with model: @item, local: true do |f| %>
+  <div>
    <%= @item.title %>
+  </div>
+  <div>
    <%= image_tag  @item.image, size: '300x400' %>
+  </div>
+  <div>
    <%= @item.concept %>
+  </div>
 <% end %>
