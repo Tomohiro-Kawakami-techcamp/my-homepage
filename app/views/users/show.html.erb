@@ -1,0 +1,13 @@
+<%= link_to "戻る", root_path %>
+<div class="contents row">
+  <div class="container">
+  <p><%= @user.name %>さんについて</p>
+  <div>
+   <%= "メールアドレス：" %><%= @user.email %>
+  </div>
+  <br>
+  <div>
+   <%= "自己紹介文：" %><%= @user.profile %>
+  </div>
+  </div>
+</div>
