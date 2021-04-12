@@ -23,7 +23,9 @@
             </li>
           </ul>
           </span>
+          <% if current_user.id == 1 %>
            <%= link_to "投稿する", new_item_path, class: "post" %>
+          <% end %>
           </div>
         <% else %>
           <div class="grid-6">
